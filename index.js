@@ -40,4 +40,5 @@ express()
       res.send("Error " + err);
     }
   })
+  .get('/test', (req, res) => res.send('github test'))
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
